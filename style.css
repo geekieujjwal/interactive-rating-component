@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --bg_color: hsl(216, 12%, 8%);
+  --box_color: hsl(213, 19%, 18%);
+  --heading: hsl(0, 0%, 100%);
+  --color_inside_circles: hsl(216, 12%, 54%);
+  --hover_color: hsl(217, 12%, 63%);
+  --submit: hsl(25, 97%, 53%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_color);
+  font-family: "Overpass", sans-serif;
+}
+
+.box {
+  border-radius: 3rem;
+  background-color: var(--box_color);
+  min-width: 28rem;
+  max-width: 40rem;
+}
+
+/* BOX1 */
+
+.box1 {
+  padding: 2rem;
+}
+
+.star {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 1.3rem;
+  background-color: hsla(213, 14%, 25%, 0.723);
+}
+
+h1 {
+  font-size: xx-large;
+  margin: 1.5rem 0 1rem;
+  color: var(--heading);
+}
+
+.para {
+  font-size: 1.5rem;
+  color: var(--color_inside_circles);
+}
+
+.numbers {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+li {
+  padding: 2rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: hsla(213, 14%, 25%, 0.723);
+  color: var(--color_inside_circles);
+}
+
+li:hover {
+  background-color: var(--hover_color);
+  color: var(--heading);
+}
+
+#submit-btn {
+  padding: 1.3rem 0;
+  min-width: 30rem;
+  width: 100%;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border-style: none;
+  background-color: var(--submit);
+  color: var(--heading);
+}
+
+#submit-btn:hover {
+  background-color: var(--heading);
+  color: var(--submit);
+}
+
+/* BOX2 */
+
+.box2 {
+  display: none;
+  padding: 2rem 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.thankyou_img {
+  margin: 0.5rem 0 2.5rem;
+}
+
+#rating {
+  color: var(--submit);
+  background-color: hsla(213, 14%, 25%, 0.723);
+  border-radius: 2rem;
+  padding: 0.7rem 0;
+  width: 55%;
+  text-align: center;
+}
+
+.heading_thankyou {
+  margin: 3rem 0 2rem;
+  font-size: xx-large;
+  color: var(--heading);
+}
+
+.para2 {
+  color: var(--color_inside_circles);
+  text-align: center;
+  padding: 0 0.3rem;
+}
+
+@media screen and (max-width: 330px) {
+  #submit-btn {
+    min-width: 10rem;
+  }
+}
